@@ -6,8 +6,9 @@
 <script>
 $(document).ready(function(){
   $("#button1").click(function(){
-    $("#clicked").fadeOut("9999999999");
-    $("#clicked").fadeIn("400");
+    $("#clicked").animate({
+    left: '50%'
+    });
   });
 });
 </script>
@@ -84,7 +85,6 @@ text-align: center;
 text-align: center;
 }
 #clicked{
-text-align: center;
 color: white;
 font-size: 20px;
 }
