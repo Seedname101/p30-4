@@ -46,9 +46,28 @@
   margin: 4px 2px;
   cursor: pointer;
 }
-      #container{
-      text-align: center;
-      }
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#container1{
+text-align: center;
+}   
+#container{
+text-align: center;
+}
+#clicked{
+text-align: center;
+color: white;
+}
     </style>
   </head>
   <body>
@@ -57,10 +76,74 @@
      <div id = "container">
     <a href="https://seedname101.github.io/p30/" class="button">Click to return to main page</a>
     </div>
+     <div id = "container1">
+    <p onclick="myFunction()" class="button1">Click to generate random topic</p>
+    </div>
+    <p id = "clicked"></p>
    <div class="footer">
   <p><a class = "ema" href="mailto:juliandominguez0415@gmail.com">Contact Me</a></p>
   <p>Made By Julian Dominguez</p>
 </div>
-    <script></script>
+    <script>
+function myFunction(){
+var a = "Quatrain";
+var b = "Sonnet";
+var c = "Haiku";
+var d = "Cacophony";
+var e = "Pantoum";
+var f = "Sestina";
+var g = "Elegy";
+var h = "Ode";
+var i = "Ghazal";
+var j = "Terza Rima";
+var k = "Prose Poem";
+var l = "Tercet";
+var m = "Villanelle";
+var n = "Free Verse";
+var o = Math.floor(Math.random() * 14);
+if(o === 0){
+document.getElementById("clicked").innerHTML = a;
+}
+if(o === 1){
+document.getElementById("clicked").innerHTML = b;
+}
+if(o === 2){
+document.getElementById("clicked").innerHTML = c;
+}     
+if(o === 3){
+document.getElementById("clicked").innerHTML = d;
+}     
+if(o === 4){
+document.getElementById("clicked").innerHTML = e;
+}
+if(o === 5){
+document.getElementById("clicked").innerHTML = f;
+} 
+if(o === 6){
+document.getElementById("clicked").innerHTML = g;
+}     
+if(o === 7){
+document.getElementById("clicked").innerHTML = h;
+}
+if(o === 8){
+document.getElementById("clicked").innerHTML = i;
+}       
+if(o === 9){
+document.getElementById("clicked").innerHTML = j;
+}     
+if(o === 10){
+document.getElementById("clicked").innerHTML = k;
+}
+if(o === 11){
+document.getElementById("clicked").innerHTML = l;
+}       
+if(o === 12){
+document.getElementById("clicked").innerHTML = m;
+}
+if(o === 13){
+document.getElementById("clicked").innerHTML = n;
+}       
+      }
+    </script>
   </body>
 </html>
