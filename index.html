@@ -8,6 +8,7 @@ $(document).ready(function(){
   $("#button1").click(function(){
     $("#clicked").hide();
     $("#clicked").slideDown();
+ $("#warn").hide().show("slide", { direction: "left" }, 1500);
   });
 });
 </script>
@@ -24,8 +25,8 @@ $(document).ready(function(){
       #warn{
       text-align: center;
       color: red;
-      background-color: rgb(255, 255, 255, 0.7);
-        width: 80%;
+      background-color: rgb(255, 255, 255);
+      width: 80%;
       visibility: hidden;
       }
       a.ema{
@@ -91,12 +92,19 @@ font-size: 20px;
 text-align: center;
 
 }
+      #container2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
   <body>
     <h1 class = "lo">Poetry 30/30 Poem Randomizer</h1>
+    <div id = "container2"
     <h4 id = "warn">This is not the format picker. This is just a randomizer used to pick the format. If you would like to see the format for the day, return to the main menu.</h4>
-     <div id = "container">
+  </div>
+  <div id = "container">
     <a href="https://seedname101.github.io/p30/" class="button">Click to return to main page</a>
     </div><br>
      <div id = "container1">
