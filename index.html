@@ -4,14 +4,11 @@
     <title>30/30 Poem Randomizer</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    $("#warn").hide();
-  $("#ccc1").hide();
+
 $(document).ready(function(){
   $("#button1").click(function(){
     $("#clicked").hide();
     $("#clicked").slideDown();
-  $("#warn").slideDown();
-  $("#ccc1").slideDown();
   });
 });
 </script>
@@ -29,12 +26,14 @@ $(document).ready(function(){
       text-align: center;
       color: red;
       width: 1050px;
+        visibility: hidden;
       }
     #ccc1{
         margin: 10px auto 20px;
     display: block;
     background: rgb(255, 255, 255, 0.7);
       width: 1050px;
+      visibility: hidden;
     }
       a.ema{
       color:black;
@@ -120,6 +119,8 @@ text-align: center;
 </div>
     <script type = "text/javascript">
 function myFunction(){
+document.getElementById("warn").style.visibility: visible;
+document.getElementById("ccc1").style.visibility: visible;
 var a = "Quatrain";
 var b = "Sonnet";
 var c = "Haiku";
