@@ -27,11 +27,11 @@ $(document).ready(function(){
       width: 1000px;
       visibility: hidden;
       }
-    .ccc1{
+    #ccc1{
         margin: 10px auto 20px;
     display: block;
     background: rgb(255, 255, 255, 0.7);
-      width: 1000px;
+      width: 1050px;
       visibility: hidden;
     }
       a.ema{
@@ -102,7 +102,7 @@ text-align: center;
   </head>
   <body>
     <h1 class = "lo">Poetry 30/30 Poem Randomizer</h1>
-    <div class = "ccc1">
+    <div id = "ccc1">
     <h4 id = "warn">This is not the format picker. This is just a randomizer used to pick the format. If you would like to see the format for the day, return to the main menu.</h4>
     </div>
   <div id = "container">
@@ -119,7 +119,7 @@ text-align: center;
     <script type = "text/javascript">
 function myFunction(){
 document.getElementById("warn").style.visibility = "visible";
-document.getElementsClassName("ccc1")[0].style.visibility = "visible";
+document.getElementById("ccc1").style.visibility = "visible";
 var a = "Quatrain";
 var b = "Sonnet";
 var c = "Haiku";
