@@ -24,10 +24,16 @@ $(document).ready(function(){
       #warn{
       text-align: center;
       color: red;
-      background-color: rgb(255, 255, 255);
-      width: 800px;
+      width: 1000px;
       visibility: hidden;
       }
+    .ccc1{
+        margin: 10px auto 20px;
+    display: block;
+    background: rgb(255, 255, 255, 0.7);
+      width: 1000px;
+      visibility: hidden;
+    }
       a.ema{
       color:black;
       font-weight: bold;
@@ -96,9 +102,9 @@ text-align: center;
   </head>
   <body>
     <h1 class = "lo">Poetry 30/30 Poem Randomizer</h1>
-    
+    <div class = "ccc1">
     <h4 id = "warn">This is not the format picker. This is just a randomizer used to pick the format. If you would like to see the format for the day, return to the main menu.</h4>
-
+    </div>
   <div id = "container">
     <a href="https://seedname101.github.io/p30/" class="button">Click to return to main page</a>
     </div><br>
@@ -113,6 +119,7 @@ text-align: center;
     <script type = "text/javascript">
 function myFunction(){
 document.getElementById("warn").style.visibility = "visible";
+document.getElementsClassName("ccc1")[0].style.visibility = "visible";
 var a = "Quatrain";
 var b = "Sonnet";
 var c = "Haiku";
