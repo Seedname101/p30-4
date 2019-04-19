@@ -98,25 +98,61 @@ font-size: 20px;
 text-align: center;
 
 }
-
+     ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
     </style>
   </head>
   <body>
+    
+         <ul>
+<li><a class="active" href="https://seedname101.github.io/p30">Home</a></li>
+  <li><a href="https://seedname101.github.io/p30-3">All Topics</a></li>
+  <li><a href="https://seedname101.github.io/p30-1">About</a></li>
+  <li><a href="https://seedname101.github.io/p30-2">Format Picker</a></li>
+  <li><a href="https://seedname101.github.io/p30-4">Format Generator</a></li>
+  <li><img src = "https://seedname101.github.io/p30/byline.png" width="300px" height="40px"></li>
+</ul>
+    
+     <div style="padding:20px;margin-top:30px;">
     <h1 class = "lo">Poetry 30/30 Poem Randomizer</h1>
     <div id = "ccc1">
     <h4 id = "warn">This is not the format picker. This is just a randomizer used to pick the format. If you would like to see the format for the day, return to the main menu.</h4>
     </div>
-  <div id = "container">
-    <a href="https://seedname101.github.io/p30/" class="button">Click to return to main page</a>
-    </div><br>
      <div id = "container1">
     <p onmouseover="overFunction()" onclick="myFunction()" id="button1">Click to generate random topic</p>
     </div><br>
     <p id = "clicked"></p>
+    </div>
+    
    <div class="footer">
   <p><a class = "ema" href="mailto:juliandominguez0415@gmail.com">Contact Me</a></p>
   <p>Made By Julian Dominguez</p>
 </div>
+    
     <script type = "text/javascript">
 function myFunction(){
 document.getElementById("warn").style.visibility = "visible"; 
